@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">Nishanthini’s Portfolio</div>
+      <nav class="nav-links">
+        <button onclick="scrollToSection('home')"><i data-lucide="home"></i> Home</button>
+        <button onclick="scrollToSection('about')"><i data-lucide="user"></i> About</button>
+        <button onclick="scrollToSection('skills')"><i data-lucide="code"></i> Skills</button>
+        <button onclick="scrollToSection('projects')"><i data-lucide="briefcase"></i> Projects</button>
+        <button onclick="scrollToSection('experience')"><i data-lucide="layers"></i> Experience</button>
+        <button onclick="scrollToSection('certifications')"><i data-lucide="award"></i> Certifications</button>
+        <button onclick="scrollToSection('contact')"><i data-lucide="mail"></i> Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="container home-container">
+      <div class="home-text">
+        <h1>Hi, I'm <span class="accent">NISHANTHINI S</span></h1>
+        <p class="subtitle">Final-year Computer Science Engineering student</p>
+        <p>Designing and developing scalable applications that solve real-world problems</p>
+        <div class="btn-group">
+          <a href="#contact" class="btn primary">Get in Touch</a>
+          <a href="#projects" class="btn outline">View Projects</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Nishanthini08"><i data-lucide="github"></i></a>
+          <a href="www.linkedin.com/in/nishanthini-s-ab735629a"><i data-lucide="linkedin"></i></a>
+          <a href="nishanthini2408@gmail.com"><i data-lucide="mail"></i></a>
+          <a href="9444048972"><i data-lucide="phone"></i></a>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="profile-pic"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>About Me</h2>
+        <p class="muted">Get to know me better</p>
+      </div>
+      <div class="about-card">
+        <h3>My Journey</h3>
+        <p>I’m a final-year Computer Science Engineering student with a strong foundation in full-stack development, cloud solutions, and software engineering. I enjoy building efficient, scalable, and user-friendly applications.</p>
+        <div class="grid-2">
+          <div>
+            <h4>Education</h4>
+            <p>B.E. Computer Science And Engineering </p>
+            <small class="accent">Velammal Institute Of Technology-Anna University,2022-2026</small>
+          </div>
+          <div>
+            <h4>Location</h4>
+            <p>Chennai,TamilNadu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container text-center">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <p class="muted">Technologies and tools I work with</p>
+      </div>
+      <div id="skills-grid" class="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-dark">
+    <div class="container text-center">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <p class="muted">A selection of my recent work</p>
+      </div>
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2>Work Experience</h2>
+        <p class="subtext">My professional journey</p>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>Full Stack Web Developer</h3>
+            <p class="subtext">8Queens Software Technologies Pvt. Ltd | June 2025 - July 2025</p>
+            <p>MindChirps Website – A dynamic blogging platform with category-based navigation, content tagging, newsletter subscription, responsive UI, and real-time content management.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Java Developer Intern</h3>
+            <p class="subtext">Infosys Springboard | Oct 2024 - Dec 2024</p>
+            <p>Multi-Cloud Storage Application – A unified platform for Google Drive & OneDrive with secure authentication, real-time CRUD, file transfer, storage monitoring, and seamless upload/download.
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container text-center">
+      <div class="section-header">
+        <h2>Certifications</h2>
+        <p class="muted">Professional credentials and achievements</p>
+      </div>
+      <div id="cert-grid" class="cert-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Get In Touch</h2>
+        <p class="muted">Have a project in mind? Let's work together!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i data-lucide="mail"></i> nishanthini2408@gmail.com</p>
+          <p><i data-lucide="phone"></i> +91 9444048972</p>
+          <p><i data-lucide="linkedin"></i> www.linkedin.com/in/nishanthini-s-ab735629a</p>
+          <p><i data-lucide="github"></i> https://github.com/Nishanthini08</p>
+        </div>
+        <a href="mailto:nishanthini2408@gmail.com" class="btn primary">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo">NISHANTHINI S</div>
+        <p class="muted">&copy; <span id="year"></span> All rights reserved.</p>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/Nishanthini08"><i data-lucide="github"></i></a>
+        <a href="www.linkedin.com/in/nishanthini-s-ab735629a"><i data-lucide="linkedin"></i></a>
+        <a href="nishanthini2408@gmail.com"><i data-lucide="mail"></i></a>
+        <a href="9444048972"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
