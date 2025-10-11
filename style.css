@@ -41,7 +41,7 @@ a { text-decoration:none; color:inherit; }
 .socials a:hover { color:var(--accent);}
 .home-image { flex:1 1 250px; display:flex; justify-content:center; }
 .profile-pic { width:250px; height:250px; border-radius:50%; border:2px dashed var(--accent); background:var(--bg-dark);  /* Add your photo */
-  background-image: url('photo4.jpg');  /* replace with your file path */
+  background-image: url('photo1.jpg');  /* replace with your file path */
   background-size: cover;   /* ensures the photo covers the div */
   background-position: center; /* centers the photo */}
 
@@ -81,3 +81,4 @@ a { text-decoration:none; color:inherit; }
 /* Footer */
 .footer { background:var(--bg); border-top:1px solid var(--bg-dark); padding:30px 20px;}
 .footer-container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;}
+
